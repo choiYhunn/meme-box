@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f8f5ed">
+  <meta name="description" content="2020년대 밈을 골라 선물상자에 포장하세요. 받은 사람은 열어보고 후회할 수 있습니다.">
+  <meta property="og:title" content="MEME BOX — 선물인 줄 알았지?">
+  <meta property="og:description" content="너에게 아주 중요한 걸 준비했어. 일단 열어봐 🎁">
+  <meta property="og:type" content="website">
+  <title>MEME BOX.zip — 수상한 선물 제조소</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div id="app">
+    <div class="site-wrap" id="creator">
+      <div class="topline"><span>★ THE INTERNET'S MOST QUESTIONABLE GIFT SHOP ★</span><span id="date-flag">EST. 2026</span></div>
+      <header class="nav">
+        <a class="brand" href="#" aria-label="MEME BOX 홈"><span class="brand-symbol">✳</span><span>MEME<span class="brand-alt">BOX</span><span class="brand-zip">.zip</span></span></a>
+        <div class="nav-right"><span class="live-dot"></span><span class="nav-label">뇌 녹는 중</span><button id="about-btn" class="plain-link" type="button">이게 뭔데?</button></div>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="eyebrow-dot"></span> 2020 — 2026 밈 총집합 <span class="arrow-separator">↗</span> 최신 릴스 포함</div>
+            <h1 id="hero-title">선물인 줄<br><span class="underlined">알았지?</span><span class="hero-sticker" aria-hidden="true">ㅋㅋ</span></h1>
+            <p>선물상자 하나에 인터넷의 온갖 이상한 걸 담았습니다.<br>상대가 열었을 때의 표정은 책임지지 않습니다.</p>
+            <div class="hero-buttons"><button class="cta" type="button" id="jump-create">밈 폭탄 만들기 <span aria-hidden="true">↗</span></button><button class="secondary-btn" type="button" id="demo-btn">직접 당해보기 <span aria-hidden="true">▶</span></button></div>
+            <div class="hero-foot"><span><i class="mini-check">✓</i> 회원가입 없음</span><span><i class="mini-check">✓</i> 링크 하나로 공유</span><span><i class="mini-check">✓</i> 100% 쓸데없음</span></div>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="visual-stars">✳　✦</div>
+            <div class="visual-blob">WELCOME TO THE BRAINROT ZONE</div>
+            <div class="hero-gift"><div class="gift-top"><div class="gift-top-ribbon"></div></div><div class="gift-main"><div class="gift-ribbon"></div><div class="gift-label">절대<br>열지마</div></div></div>
+            <div class="float-sticker sticker-one">L을 가져가↗</div><div class="float-sticker sticker-two">퉁퉁퉁!</div><div class="float-sticker sticker-three">?????</div>
+            <div class="floor-shadow"></div>
+          </div>
+        </section>
+
+        <div class="marquee-bar" aria-hidden="true"><div class="marquee-content">✳　경고: 뇌가 녹을 수 있음　✳　트랄랄레로 트랄랄라　✳　L을 가져가　✳　선물은 없습니다　✳　퉁퉁퉁 사후르　✳　경고: 뇌가 녹을 수 있음　✳　트랄랄레로 트랄랄라　✳　L을 가져가　✳　선물은 없습니다　✳　퉁퉁퉁 사후르　</div></div>
+
+        <section class="builder" id="make" aria-labelledby="make-heading">
+          <div class="section-head"><div><div class="section-kicker">01 / CHOOSE YOUR CHAOS</div><h2 id="make-heading">무슨 밈으로 <em>괴롭힐까?</em></h2><p>최소 1개. 여러 개 고르면 순서대로가 아니라 무작위로 튀어나옵니다.</p></div><div class="counter" id="counter"><strong id="selected-count">0</strong><span>개 선택됨</span></div></div>
+          <div class="toolbar"><div class="filter-row" id="year-filters" role="group" aria-label="연도 필터"></div><label class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" placeholder="밈 이름 검색..." aria-label="밈 이름 검색" autocomplete="off"></label></div>
+          <div class="preset-row"><span class="preset-label">귀찮으면 추천팩 ↘</span><button data-preset="latest" class="preset" type="button">⚡ 최신 릴스</button><button data-preset="brainrot" class="preset" type="button">🧠 브레인롯</button><button data-preset="legend" class="preset" type="button">🕺 근본 밈</button><button data-preset="random" class="preset" type="button">🎲 랜덤 8개</button><button id="clear-selection" class="preset preset-clear" type="button">선택 해제</button></div>
+          <div id="meme-grid" class="meme-grid" aria-live="polite"></div>
+          <p class="archive-hint">※ 유행 연도는 국내에서 화제가 된 시점 기준이며, 모든 캐릭터 이미지는 자체 제작한 패러디 그래픽입니다.</p>
+        </section>
+
+        <section class="configure" aria-labelledby="config-heading">
+          <div class="config-title"><div class="section-kicker">02 / FINAL BOSS</div><h2 id="config-heading">이제 <em>포장만 하면 끝.</em></h2></div>
+          <div class="config-grid"><div class="form-card">
+            <label class="field-label" for="recipient">받는 사람 <span>OPTIONAL</span></label><input class="text-input" type="text" id="recipient" maxlength="24" placeholder="예: 아무것도 모르는 김철수">
+            <label class="field-label" for="final-message">마지막 한마디 <span>OPTIONAL</span></label><textarea class="text-input text-area" id="final-message" maxlength="120" placeholder="예: 축하합니다! 아무것도 당첨되지 않았습니다."></textarea>
+            <div class="intensity-head"><label class="field-label" for="intensity">킹받음 강도</label><strong id="intensity-label">3단계 · 꽤 킹받음</strong></div>
+            <input id="intensity" type="range" min="1" max="5" step="1" value="3"><div class="range-markers"><span>살짝</span><span>적당히</span><span>신고 직전</span></div>
+            <div class="form-actions"><button id="preview-btn" class="secondary-btn" type="button">👀 미리보기</button><button id="make-link" class="cta" type="button">🎁 링크 만들기 <span aria-hidden="true">↗</span></button></div>
+            <div id="link-result" class="link-result" hidden><div class="link-title">★ 수상한 링크 완성 ★</div><div class="link-input-row"><input id="share-url" readonly aria-label="공유 링크"><button id="copy-link" type="button">복사</button></div><button id="native-share" type="button" class="share-native">친구한테 바로 보내기 ↗</button><p>링크만 보내면 끝. 받는 사람은 앱 설치 없이 바로 열 수 있어요.</p></div>
+          </div><div class="receipt-card" aria-label="선물 영수증 미리보기"><div class="receipt-holes"></div><div class="receipt-top">M E M E · B O X</div><div class="receipt-mark">✓</div><div class="receipt-heading">선물 제작 영수증</div><div class="receipt-lines"><div><span>품목</span><strong>인터넷 찌꺼기</strong></div><div><span>수량</span><strong id="receipt-count">0개</strong></div><div><span>받는 사람</span><strong id="receipt-name">미지정</strong></div><div><span>킹받음</span><strong id="receipt-intensity">LEVEL 03</strong></div></div><div class="receipt-dash"></div><div class="receipt-total"><span>합계</span><strong>0원</strong></div><div class="receipt-stamp">환불 불가 ㅋㅋ</div><div class="receipt-foot">THANK YOU FOR YOUR BAD DECISION</div></div></div>
+        </section>
+      </main>
+      <footer class="footer"><span>MEME BOX.zip <b>✳</b> 웃자고 만든 사이트</span><span>2026 · NO ADS · NO TRACKING · NO ACCOUNT</span></footer>
+    </div>
+
+    <div class="experience" id="experience" hidden>
+      <div class="experience-top"><span class="exp-brand">✳ MEME BOX.zip</span><div class="exp-actions"><button type="button" id="sound-toggle" aria-label="효과음 끄기">🔊 소리 켜짐</button><button type="button" id="exp-exit" aria-label="체험 닫기">✕ 닫기</button></div></div>
+      <div class="experience-body" id="experience-body"><div class="experience-intro" id="exp-intro"><div class="intro-tag">SPECIAL DELIVERY FOR YOU</div><div class="exp-box-wrap"><div class="exp-box"><div class="exp-box-lid"></div><div class="exp-box-body"><span>?</span></div></div></div><h2><span id="exp-target">당신</span>에게<br>선물이 도착했습니다.</h2><p>누가 보냈을까요? 열어볼 용기는 있으신가요?</p><button type="button" class="cta exp-open" id="exp-start">🎁 선물 뜯기 <span>↗</span></button><div class="exp-disclaimer">※ 열람 후 되돌릴 수 있음. 그냥 닫으면 됩니다.</div></div><div id="exp-stage" class="exp-stage" hidden><div class="progress-bar" id="exp-progress"></div><div id="stage-content" class="stage-content" aria-live="polite"></div><div class="stage-foot"><span id="stage-step">1/5</span><button id="skip-stage" type="button">빨리 다음 거 봐 ↗</button></div></div><div id="exp-finale" class="exp-finale" hidden><div class="finale-icon">🏆</div><div class="finale-small">축하합니다! <span>아무것도 당첨되지 않았습니다</span></div><h2 id="finale-title">축하합니다. 낚이셨습니다.</h2><p id="finale-message"></p><div class="finale-footer">이 링크를 보낸 친구의 인성을 의심해보세요.</div><div class="finale-buttons"><button id="play-again" class="cta" type="button">↻ 다시 당하기</button><button id="create-own" class="secondary-btn" type="button">내가 더 심한 거 만들기 ↗</button></div></div></div>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <dialog id="about-dialog"><div class="about-head"><h2>이게 뭔데?</h2><button id="about-close" aria-label="닫기">✕</button></div><p>인터넷에서 유행한 밈들을 선물상자에 꾸겨 넣어서 친구에게 보내는 장난 사이트입니다. 뜻밖의 밈 폭탄을 맞히는 게 전부예요.</p><p>이 사이트의 밈 이미지는 원본 콘텐츠를 복제하지 않은 <b>자체 제작 패러디 일러스트</b>이고, 효과음도 자체 생성합니다. 원본 음원과 영상은 포함되지 않습니다.</p><p>서버, 회원가입, 추적 기능 없음. 받는 사람 이름과 메시지는 <b>공유 링크 자체에 포함</b>되므로 민감한 내용은 쓰지 마세요.</p><button id="about-ok" class="cta">ㅇㅋ 이해함</button></dialog>
+  </div>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
